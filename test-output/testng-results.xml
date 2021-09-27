@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="16" passed="16">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9687" started-at="2021-09-27T12:43:09 CEST" finished-at="2021-09-27T12:43:19 CEST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9687" started-at="2021-09-27T12:43:09 CEST" finished-at="2021-09-27T12:43:19 CEST">
+      <class name="ApiTaskTest.TestRest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:ApiTaskTest.TestRest@6f195bc3]" name="beforeSuite" is-config="true" duration-ms="635" started-at="2021-09-27T12:43:09 CEST" finished-at="2021-09-27T12:43:09 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="test_connection_to_api_simulator()[pri:0, instance:ApiTaskTest.TestRest@6f195bc3]" name="test_connection_to_api_simulator" duration-ms="1928" started-at="2021-09-27T12:43:09 CEST" finished-at="2021-09-27T12:43:11 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_connection_to_api_simulator -->
+        <test-method status="PASS" signature="test_failure_request(int,java.lang.String,java.lang.String,int,java.lang.String)[pri:0, instance:ApiTaskTest.TestRest@6f195bc3]" name="test_failure_request" duration-ms="1550" started-at="2021-09-27T12:43:11 CEST" data-provider="payloadForFailurePost" finished-at="2021-09-27T12:43:13 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EUR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DE]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Amount not allowed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_failure_request -->
+        <test-method status="PASS" signature="test_failure_request(int,java.lang.String,java.lang.String,int,java.lang.String)[pri:0, instance:ApiTaskTest.TestRest@6f195bc3]" name="test_failure_request" duration-ms="320" started-at="2021-09-27T12:43:13 CEST" data-provider="payloadForFailurePost" finished-at="2021-09-27T12:43:13 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EUR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DE]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Amount not allowed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_failure_request -->
+        <test-method status="PASS" signature="test_failure_request(int,java.lang.String,java.lang.String,int,java.lang.String)[pri:0, instance:ApiTaskTest.TestRest@6f195bc3]" name="test_failure_request" duration-ms="326" started-at="2021-09-27T12:43:13 CEST" data-provider="payloadForFailurePost" finished-at="2021-09-27T12:43:14 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[600]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EUR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AU]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Currency not allowed on selected country]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_failure_request -->
+        <test-method status="PASS" signature="test_failure_request(int,java.lang.String,java.lang.String,int,java.lang.String)[pri:0, instance:ApiTaskTest.TestRest@6f195bc3]" name="test_failure_request" duration-ms="349" started-at="2021-09-27T12:43:14 CEST" data-provider="payloadForFailurePost" finished-at="2021-09-27T12:43:14 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[600]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EUR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SG]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Currency not allowed on selected country]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_failure_request -->
+        <test-method status="PASS" signature="test_failure_request(int,java.lang.String,java.lang.String,int,java.lang.String)[pri:0, instance:ApiTaskTest.TestRest@6f195bc3]" name="test_failure_request" duration-ms="308" started-at="2021-09-27T12:43:14 CEST" data-provider="payloadForFailurePost" finished-at="2021-09-27T12:43:14 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AUD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DE]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Currency not allowed on selected country]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_failure_request -->
+        <test-method status="PASS" signature="test_failure_request(int,java.lang.String,java.lang.String,int,java.lang.String)[pri:0, instance:ApiTaskTest.TestRest@6f195bc3]" name="test_failure_request" duration-ms="404" started-at="2021-09-27T12:43:14 CEST" data-provider="payloadForFailurePost" finished-at="2021-09-27T12:43:15 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[600]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AUD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SG]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Currency not allowed on selected country]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_failure_request -->
+        <test-method status="PASS" signature="test_failure_request(int,java.lang.String,java.lang.String,int,java.lang.String)[pri:0, instance:ApiTaskTest.TestRest@6f195bc3]" name="test_failure_request" duration-ms="304" started-at="2021-09-27T12:43:15 CEST" data-provider="payloadForFailurePost" finished-at="2021-09-27T12:43:15 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[600]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SGD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DE]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Currency not allowed on selected country]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_failure_request -->
+        <test-method status="PASS" signature="test_failure_request(int,java.lang.String,java.lang.String,int,java.lang.String)[pri:0, instance:ApiTaskTest.TestRest@6f195bc3]" name="test_failure_request" duration-ms="347" started-at="2021-09-27T12:43:15 CEST" data-provider="payloadForFailurePost" finished-at="2021-09-27T12:43:15 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[600]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SGD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AU]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Currency not allowed on selected country]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_failure_request -->
+        <test-method status="PASS" signature="test_failure_request(int,java.lang.String,java.lang.String,int,java.lang.String)[pri:0, instance:ApiTaskTest.TestRest@6f195bc3]" name="test_failure_request" duration-ms="327" started-at="2021-09-27T12:43:15 CEST" data-provider="payloadForFailurePost" finished-at="2021-09-27T12:43:16 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EUR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Country not allowed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_failure_request -->
+        <test-method status="PASS" signature="test_failure_request(int,java.lang.String,java.lang.String,int,java.lang.String)[pri:0, instance:ApiTaskTest.TestRest@6f195bc3]" name="test_failure_request" duration-ms="360" started-at="2021-09-27T12:43:16 CEST" data-provider="payloadForFailurePost" finished-at="2021-09-27T12:43:16 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DE]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Currency not allowed on selected country]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_failure_request -->
+        <test-method status="PASS" signature="test_failure_request(int,java.lang.String,java.lang.String,int,java.lang.String)[pri:0, instance:ApiTaskTest.TestRest@6f195bc3]" name="test_failure_request" duration-ms="300" started-at="2021-09-27T12:43:16 CEST" data-provider="payloadForFailurePost" finished-at="2021-09-27T12:43:16 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[800]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Country not allowed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_failure_request -->
+        <test-method status="PASS" signature="test_successful_request(int,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ApiTaskTest.TestRest@6f195bc3]" name="test_successful_request" duration-ms="733" started-at="2021-09-27T12:43:16 CEST" data-provider="payloadForSuccessfulPost" finished-at="2021-09-27T12:43:17 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EUR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DE]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Amount provided]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_successful_request -->
+        <test-method status="PASS" signature="test_successful_request(int,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ApiTaskTest.TestRest@6f195bc3]" name="test_successful_request" duration-ms="697" started-at="2021-09-27T12:43:17 CEST" data-provider="payloadForSuccessfulPost" finished-at="2021-09-27T12:43:18 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[800]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EUR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DE]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Amount provided]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_successful_request -->
+        <test-method status="PASS" signature="test_successful_request(int,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ApiTaskTest.TestRest@6f195bc3]" name="test_successful_request" duration-ms="610" started-at="2021-09-27T12:43:18 CEST" data-provider="payloadForSuccessfulPost" finished-at="2021-09-27T12:43:18 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EUR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DE]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Amount provided]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_successful_request -->
+        <test-method status="PASS" signature="test_successful_request(int,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ApiTaskTest.TestRest@6f195bc3]" name="test_successful_request" duration-ms="729" started-at="2021-09-27T12:43:18 CEST" data-provider="payloadForSuccessfulPost" finished-at="2021-09-27T12:43:19 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EUR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DE]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Amount not provided]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_successful_request -->
+      </class> <!-- ApiTaskTest.TestRest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
