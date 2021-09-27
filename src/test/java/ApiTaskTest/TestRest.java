@@ -15,8 +15,6 @@ import static io.restassured.RestAssured.*;
 import org.testng.Assert;
 
 
-
-
 public class TestRest {
 	
 	RequestSpecification requestSpecification;
@@ -33,10 +31,12 @@ public class TestRest {
 	@DataProvider(name = "payloadForSuccessfulPost")
 	public Object[][] dpMethod1() {
 		return new Object[][] { 
-			    { 1000, "EUR", "DE", "Amount provided"},
-			    { 800, "EUR", "DE", "Amount provided"},
-				{ 0, "EUR", "DE", "Amount provided"},
+			    { 1000, "EUR", "DE", ""},
+			    { 800, "EUR", "DE", ""},
+				{ 0, "EUR", "DE", ""},
 				{ 0, "EUR", "DE", "Amount not provided"}};
+				//{ 100, "AUD", "AU", "Amount not provided"},
+				// { 200, "SGD", "SG", "Amount not provided"}
 				// For combination of "SGD and SG" and "AUD and AU", I get 500 error. Not sure whether its my issue or server issue. Didnt get time to look at it		
 	}
 	
@@ -127,12 +127,12 @@ public class TestRest {
 			statusCode(200).
 			extract().jsonPath();
 		
-		String orderId = postResponse.get("data[0].orderId").toString();
 		String transactionMessage = postResponse.get("data[0].message");
 		
 		String expectedTransactionMessage = "Transaction succeeded";
 		Assert.assertEquals(transactionMessage, expectedTransactionMessage);
 		
+		String orderId = postResponse.get("data[0].orderId").toString();
 		JsonPath getResponse = given().
 			param("orderId", orderId).
 			spec(requestSpecification).get("/.netlify/functions/payment").
